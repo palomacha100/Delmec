@@ -1,0 +1,72 @@
+body, ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+   
+    width: 150px;
+}
+
+a{
+    color: #0091bd;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+}
+
+a:hover{
+    background: rgba(0, 0, 0, .05);
+}
+
+#header{
+    box-sizing: border-box;
+    height: 70px;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+    
+}
+
+#menu a{
+    display: block;
+    padding: 2.5rem;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+@media (max-width: 600px){
+    #btn-mobile{
+        display: block;
+    }
+    #menu{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        right: 0px;
+        background: #ececec;
+        z-index: 1000;
+    }
+    #nav.active #menu{
+        display: block;
+    }
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+
+
+    }
+
+}
