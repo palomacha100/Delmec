@@ -44,6 +44,36 @@ a:hover{
     display: none;
 }
 
+.containerPhoto{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+
+.containerPhoto img{
+    width: 100%;
+}
+
+.textImg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    padding: 20px;
+    margin: 0 80px 10px;
+}
+
+
+#footer{
+    list-style: none;
+
+}
+
+
+
 @media (max-width: 600px){
     #btn-mobile{
         display: flex;
