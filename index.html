@@ -9,38 +9,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delmec Tornearia</title>
     <link rel="stylesheet" href="style.css">
-    <script src="js.js"></script>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico"><title>Favicon Delmec</title>
 </head>
-<header id="header">
-    <img class="logo" src="assets/logo.jpg">
-    <nav id="nav">
-        <button onclick='toggleMenu()' class="menuHamburger" id="btn-mobile" type="submit">Menu
-            <span id="hamburger"></span>
-        </button>
-        <ul id="menu">
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
-</header>
 <body>
+    <header id="header">
+        <div class="container">
+            <img class="logo" src="assets/logo.jpg">
+            <nav id="nav">
+                <button onclick='toggleMenu()' class="menuHamburger" id="btn-mobile" type="submit">Menu
+                    <span id="hamburger"></span>
+                </button>
+                <ul id= "menu">
+                    <a href="#">Início</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Portifólio</a>
+                    <a href="#">Contato</a>
+                </ul>    
+            </nav>
+        </div>
+    </header>
+
     <section class="containerPhoto">
         <img src="assets/fundo2.png">
         <div class="textImg">tornearia<br>usinagem<br>solda<br>fabricação<br> recuperação</div>
-        <div class="textImg2">precisão<br>experiência<br>confiança</div>
+        <div class="textImg2">precisão<br>experiência<br>qualidade</div>
     </section>
 
 
 
       
-       
+<script src="js.js"></script>       
 </body>
 <footer>
-    <ul id="footer">
-        <li><a href="mailto:delmectorneria@yahoo.com.br">delmectorneria@yahoo.com.br</a></li>
-        <li><a href="tel:+553135043988">(31) 3504-3988</a></li>
-    </ul>
+    <div id="footer">
+        <a href="mailto:delmectorneria@yahoo.com.br">delmectorneria@yahoo.com.br</a>
+        <a href="tel:+553135043988">(31) 3504-3988</a>
+    </div>
 </footer>
 </html>

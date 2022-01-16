@@ -1,56 +1,51 @@
-body, ul{
-    margin: 0px;
-    padding: 0px;
+:root{
+    --azulmarinho: #121e52;
+    --azulclaro: #0091bd;
+    --branco: #fff;
 }
 
-.logo {
-   
-    width: 150px;
-}
-
-a{
-    color: #0091bd;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-weight: bold;    
-}
-
-a:hover{
-    background: rgba(0, 0, 0, .05);
-}
-
-#header{
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    height: 70px;
-    padding: 4rem;
+}
+
+header .container{
     display: flex;
+    height: auto;
     align-items: center;
     justify-content: space-between;
 }
 
-#menu{
-    display: flex;
-    list-style: none;
-    gap: .5rem;
+header .container a:hover{
+    background-color: rgb(228, 227, 227);
+}
     
+
+.logo {
+    width: 130px;
 }
 
-#menu a{
-    display: block;
-    padding: 2.5rem;
+a{
+    color: var(--azulclaro);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;    
 }
 
 #btn-mobile{
     display: none;
 }
 
-.containerPhoto{
-    width: 1200px;
-    margin: auto;
-    position: relative;
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 50px;
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    display: block;
+    padding: 2rem
 }
 
 .containerPhoto img{
@@ -62,6 +57,9 @@ a:hover{
     bottom: 5%;
     right: 0;
     text-align: right;
+    color: var(--branco);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
     padding: 20px;
     margin: 0 15% 0 0;
 }
@@ -70,20 +68,18 @@ a:hover{
     position: absolute;
     bottom: 30%;
     text-align: center;
+    font-size: 50px;
     padding: 20px;
     margin: 0 0 0 5%;
     left: 5%;
     font-family: sans-serif;
     color: transparent;
     -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: #fff;
-    
+    -webkit-text-stroke-color: var(--branco);   
 }
 
-
-#footer{
+footer{
     list-style: none;
-
 }
 
 
@@ -98,7 +94,7 @@ a:hover{
         cursor: pointer;
         gap: .5rem;
         font-weight: bold;
-        color: #121e52;
+        color: var(--azulmarinho);
     }
     #menu{
         display: none;
@@ -121,7 +117,7 @@ a:hover{
         display: block;
         width: 20px;
         border-top: 2px solid;
-        color: #121e52;
+        color: var(--azulmarinho);
     }
     #hamburger::after, #hamburger::before{
         content: " ";
